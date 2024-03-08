@@ -1,0 +1,211 @@
+/*Global*/
+@font-face {
+    font-family: "poppins";
+    src: url("../fonts/Poppins-Regular.otf");
+}
+
+:root {
+    --dark-blue: #2f3180;
+    --black-blue: #1d1e4e;
+    --white: #fff;
+    --font-poppins-bold-18: normal normal bold 18px / 27px poppins;
+    --font-poppins-bold-40: normal normal bold 40px / 60px poppins;
+    --font-poppins-bold-25: normal normal bold 25px / 38px poppins;
+    --font-poppins-bold-20: normal normal bold 20px / 30px Poppins;
+    --font-poppins-bold-80: normal normal bold 80px / 120px poppins;
+    --font-poppins-normal-20: normal normal normal 20px / 30px poppins;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+body {
+    background: transparent linear-gradient(205deg, var(--dark-blue) 0, var(--black-blue) 100%) 0 0;
+    margin: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+div {
+    display: block;
+}
+
+.main{
+    background: transparent linear-gradient(205deg, var(--dark-blue) 0, var(--black-blue) 100%) 0 0 no-repeat padding-box;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h3 {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/*Logo*/
+.logo {
+    height: 68px;
+    padding: 6px;
+    width: 68px;
+}
+
+/*Nav Bar*/
+.nav-bar {
+    align-content: center;
+    align-items: center;
+    background-color: transparent;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/*NavBar Links*/
+.nav-bar .links a {
+    color: var(--white);
+    font: var(--font-poppins-bold-18);
+    margin-left: 16px;
+    padding: 6px;
+    text-decoration: none;
+}
+
+/*Nav Bar Social*/
+.social {
+    margin-left: auto;
+    padding: 6px;
+    text-decoration: none;
+}
+
+.social-icon {
+    font: var(--font-poppins-normal-20);
+    margin-right: 10px;
+    height: 25px;
+}
+
+/*Nav Bar Button*/
+.login-button{
+    background: #dadada;
+    border-radius: 18px;
+    color: var(--black-blue);
+    cursor: pointer;
+    font: var(--font-poppins-bold-20);
+    height: 50px;
+    margin-left: 20px;
+    padding: 0;
+    width: 100px;
+}
+
+/*Welcome Section*/
+.welcome-section{
+    background: url(/main/img/bg.png) no-repeat border-box;
+    background-size: 100%;
+    height: 45em;
+    padding-top: 13em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15em;
+    padding-right: 15em;
+}
+
+.welcome-heading{
+    color: var(--white);
+    text-align: center;
+    text-shadow: 6px 6px 6px #00000029;
+    font: var(--font-poppins-bold-40);
+    text-transform: uppercase;
+}
+
+.welcome-text{
+    font: var(--font-poppins-bold-25);
+    color: var(--white);
+    text-align: center;
+    text-shadow: 6px 6px 6px #00000029;
+}
+
+/*Story Section*/
+.story-section{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15em;
+    padding-right: 15em;
+}
+
+.story-title{
+    margin-bottom: 58px;
+    color: var(--white);
+    text-align: center;
+    font: var(--font-poppins-bold-80);
+}
+
+.story-text{
+    color: var(--white);
+    font: var(--font-poppins-normal-20);
+    text-align: center;
+}
+
+.earth-bg-left{
+    background-image: url(../img/illustration-left.png);
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*About Us*/
+.earth-bg-right{
+    background-image: url(../img/illustration-right.png);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*Separator Line*/
+.line {
+    padding: 2em;
+    border-bottom: 1px solid var(--white);
+    margin: 20px auto;
+    width: 50%;
+}
+
+/*Roadmap*/
+.roadmap-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15em;
+    padding-right: 15em;
+}
+
+.roadmap-text{
+    color: var(--white);
+    margin-bottom: 58px;
+    font: var(--font-poppins-bold-80);
+    text-align: center;
+}
