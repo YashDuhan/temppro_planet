@@ -5,5 +5,5 @@ window.addEventListener("load", function() {
     this.setTimeout(function()
     {
         loader.style.display = "none";
-    },2000); //Add a 2000 milliseconds(2 Sec)
+    },2000); //Add a 2000 milliseconds(2 Sec) delay
 })

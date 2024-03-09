@@ -14,6 +14,7 @@
     --font-poppins-bold-20: normal normal bold 20px / 30px Poppins;
     --font-poppins-bold-80: normal normal bold 80px / 120px poppins;
     --font-poppins-normal-20: normal normal normal 20px / 30px poppins;
+    --font-poppins-bold-50: normal normal bold 50px / 76px poppins;
 }
 
 img {
@@ -122,7 +123,7 @@ h3 {
 
 /*Welcome Section*/
 .welcome-section{
-    background: url(/main/img/bg.png) no-repeat border-box;
+    background: url(../img/assets/bg.png) no-repeat border-box;
     background-size: 100%;
     height: 45em;
     padding-top: 13em;
@@ -172,7 +173,7 @@ h3 {
 }
 
 .earth-bg-left{
-    background-image: url(../img/illustration-left.png);
+    background-image: url(../img/illustrations/illustration-left.png);
     background-position: 0%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -180,7 +181,7 @@ h3 {
 
 /*About Us*/
 .earth-bg-right{
-    background-image: url(../img/illustration-right.png);
+    background-image: url(../img/illustrations/illustration-right.png);
     background-position: 100%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -210,6 +211,39 @@ h3 {
     text-align: center;
 }
 
+/*Team Member*/
+.team-card-container {
+    display: grid;
+    gap: 100px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    text-align: left;
+}
+
+.team-card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.team-card img {
+    border: 6px solid var(--white);
+    border-radius: 36px;
+    height: 280px;
+    width: 256px;
+}
+
+.member-name{
+    font: var(--font-poppins-bold-50);
+    color: var(--white);
+}
+
+.member-role{
+    color: var(--white);
+    font: var(--font-poppins-normal-20);
+}
 
 
 /*PreLoader*/
