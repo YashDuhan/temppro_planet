@@ -89,7 +89,7 @@ h3 {
 /*NavBar Links*/
 .nav-bar .links a {
     color: var(--white);
-    font:  normal normal bold 18px / 27px poppins;
+    font: var(--font-poppins-bold-18);
     margin-left: 16px;
     padding: 6px;
     text-decoration: none;
@@ -114,7 +114,7 @@ h3 {
     border-radius: 18px;
     color: var(--black-blue);
     cursor: pointer;
-    font: normal normal bold 20px / 30px Poppins;
+    font: var(--font-poppins-bold-20);
     height: 50px;
     margin-left: 20px;
     padding: 0;
@@ -138,12 +138,12 @@ h3 {
     color: var(--white);
     text-align: center;
     text-shadow: 6px 6px 6px #00000029;
-    font: normal normal bold 40px / 60px poppins;
+    font: var(--font-poppins-bold-40);
     text-transform: uppercase;
 }
 
 .welcome-text{
-    font: normal normal bold 25px / 38px poppins;
+    font: var(--font-poppins-bold-25);
     color: var(--white);
     text-align: center;
     text-shadow: 6px 6px 6px #00000029;
