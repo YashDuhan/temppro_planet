@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pro Planet | Login</title>
+    <link rel="stylesheet" href="./login-assets/css/login.css" />
+  </head>
+  <body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+      <div class="jumper">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+    <div class="main">
+      <!--Back Button-->
+      <a href="../index.html" class="back-button">
+        <span>
+          <svg
+            class="button-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+        </span>
+      </a>
+
+      <div class="login-section">
+        <div class="login-content">
+          <form action="">
+            <p class="login-form-text">
+              Good to see you again
+              <span role="img" aria-label="waving hand">👋</span>
+            </p>
+            <!--Form Input-->
+            <div class="email-input">
+              <label for="email" class="email-password-text"
+                >Email Address</label
+              >
+              <input
+                id="email"
+                type="email"
+                class="email-pwd-box"
+                placeholder="hello@gmail.com"
+              />
+            </div>
+            <!--Password Input-->
+            <div class="pwd-input">
+              <label for="password" class="email-password-text">Password</label>
+              <input
+                id="password"
+                type="password"
+                class="email-pwd-box"
+                placeholder="********"
+              />
+            </div>
+            <!--Login Button-->
+            <button class="login-button" type="submit">
+              <span class="login-text">Login</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./login-assets/js/login.js"></script>
+  </body>
+</html>
