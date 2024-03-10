@@ -120,3 +120,50 @@ particlesJS("particles-js", {
     "retina_detect": true
   });
   
+
+
+// TypeWriter
+const txtElement = document.getElementById("typewriter");
+const typed = ["ood to see you again"];
+let index = 0;
+let typer = 0;
+let currentTyped = [];
+let isDeleting = false;
+let isEnd = false;
+function loop() {
+  isEnd = false;
+  txtElement.innerHTML = currentTyped.join("");
+
+  if (index < typed.length) {
+    if (!isDeleting && typer <= typed[index].length) {
+      currentTyped.push(typed[index][typer]);
+      typer++;
+      txtElement.innerHTML = currentTyped.join("");
+    }
+
+    if (isDeleting && typer <= typed[index].length) {
+      currentTyped.pop(typed[index][typer]);
+      typer--;
+      txtElement.innerHTML = currentTyped.join("");
+    }
+    if (typer == typed[index].length) {
+      isEnd = true;
+      isDeleting = true;
+    }
+
+    if (isDeleting && typer === 0) {
+      currentTyped = [];
+      isDeleting = false;
+      index++;
+      if (index == typed.length) {
+        index = 0;
+      }
+    }
+  }
+  const typeSpeed = Math.random() * (100 - 50) + 50;
+  const normalSpeed = Math.random() * (300 - 200) + 100;
+  const time = isEnd ? 1000 : isDeleting ? typeSpeed : normalSpeed;
+  setTimeout(loop, time);
+}
+
+loop();
