@@ -132,3 +132,25 @@ nav{
     font-family: TT-Hoves, sans-serif;
     font-size: 100px;
 }
+
+/*Custom Cursor*/
+body{
+    cursor: none;
+}
+
+.circle-cursor {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    transition: transform 0.3s ease-in-out;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.circle-cursor.visible {
+    visibility: visible;
+}
