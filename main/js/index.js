@@ -1,4 +1,3 @@
-//Preloader
 document.addEventListener("DOMContentLoaded", function() {
     var counter = document.getElementById("counter");
     var percent = 0;
@@ -11,4 +10,11 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("loader").style.display = "none";
         }
     }, 20); // Adjust the interval as needed
+
+    var video = document.getElementById("bg-video");
+
+    video.addEventListener("canplaythrough", function() {
+        // Once the video can play through without buffering, show it
+        video.style.display = "block";
+    });
 });
