@@ -1,72 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pro Planet</title>
-    <link rel="stylesheet" href="./main/css/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./main/css/main.css" />
+  </head>
+  <body>
     <!--PreLoader-->
     <div id="loader">
-        <div id="l-c">
-            <span id="counter">0%</span>
-        </div>
+      <div id="l-c">
+        <span id="counter">0%</span>
+      </div>
     </div>
     <div class="main">
-        <!--Navigation Bar(To be updated)-->
-        <nav class="nav-bar">
-            <div class="max-width">
-              <a href="#" class="logo"><span>P</span>ro<span> P</span>lanet<span></span></a>
-              <ul class="menu">
-                <li><a href="#" class="menu-btn">Home</a></li>
-                <li><a href="#" class="menu-btn">About</a></li>
-                <li><a href="#" class="menu-btn">Login</a></li>
-              </ul>
-            </div>
-          </nav>
-        <!--Landing Page-->
-        <div class="landing-container">
-            <video autoplay loop muted>
-                <source src="./main/assets/bg.mp4">
-            </video>
-            <div class="bg-text-container">
-                <div class="bg-text">
-                <h1 class="main-title">Pro Planet</h1>
-                <p class="title-text">UNITING FOR EARTH: OUR MISSION TO SAVE OUR PLANET AND CREATE A BETTER FUTURE!</p>
-            </div>
+      <!--Navigation Bar(To be updated)-->
+      <nav class="nav-bar">
+        <div class="max-width">
+          <a href="#" class="logo"
+            ><span>P</span>ro<span> P</span>lanet<span></span
+          ></a>
+          <ul class="menu">
+            <li><a href="#" class="menu-btn">Home</a></li>
+            <li><a href="#" class="menu-btn">About</a></li>
+            <li><a href="#" class="menu-btn">Login</a></li>
+          </ul>
         </div>
+      </nav>
+      <!--Landing Page-->
+      <div class="landing-container">
+        <video autoplay loop muted>
+          <source src="./main/assets/bg.mp4" />
+        </video>
+        <div class="bg-text-container">
+          <div class="bg-text">
+            <h1 class="main-title">Pro Planet</h1>
+            <p class="title-text">
+              UNITING FOR EARTH: OUR MISSION TO SAVE OUR PLANET AND CREATE A
+              BETTER FUTURE!
+            </p>
+          </div>
         </div>
-
+      </div>
     </div>
     <script src="./main/js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
     <script>
-        // Initialize custom cursor
-        let cursor;
+      // Initialize custom cursor
+      let cursor;
 
-        document.addEventListener("DOMContentLoaded", function() {
-            // Initialize cursor and additional effects
-            cursor = new cursoreffects.rainbowCursor({
-                colors: ["#DBF2BD"],
-                // Initial default color
-                length: 14,
-                size: 18,
-            });
-
-            // Adding custom cursor using jQuery
-            const circleCursor = $("<div class='circle-cursor'></div>").appendTo("body");
-
-            $(document).on("mousemove", function(e) {
-                circleCursor.css({
-                    left: e.clientX + "px",
-                    top: e.clientY + "px"
-                });
-            });
-
-            circleCursor.addClass("visible");
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize cursor and additional effects
+        cursor = new cursoreffects.rainbowCursor({
+          colors: ["#DBF2BD"],
+          // Initial default color
+          length: 14,
+          size: 18,
         });
+
+        // Adding custom cursor using jQuery
+        const circleCursor = $("<div class='circle-cursor'></div>").appendTo(
+          "body"
+        );
+
+        $(document).on("mousemove", function (e) {
+          circleCursor.css({
+            left: e.clientX + "px",
+            top: e.clientY + "px",
+          });
+        });
+
+        circleCursor.addClass("visible");
+      });
     </script>
-</body>
+  </body>
 </html>
